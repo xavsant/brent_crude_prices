@@ -9,7 +9,7 @@ In this project, I am interested in experimenting with LSTMs as their ability to
 This project is inspired by this [article](https://medium.com/@vinayarun/from-scratch-an-lstm-model-to-predict-commodity-prices-179e12445c5a) on forecasting commodity prices using an LSTM model. 
 
 
-## Dependencies
+## Dependencies:
 
 #### **Exporting Dependencies**
 If any packages/dependencies are updated via poetry, be sure to export the requirements.txt using the following:
