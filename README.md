@@ -38,23 +38,23 @@ Run the following the your command line:
 ### [3] Model Results
 
 #### **LSTM Model Results**
-- Validation Plot<br>
+- LSTM Validation Plot<br>
 ![Validation Plot](./visuals/lstm_validation_plot.png)
 
-- Actual vs Predicted Plot<br>
+- LSTM Actual vs Predicted (AvP) Plot<br>
 ![Actual vs Predicted Plot](./visuals/lstm_actual_vs_predicted_plot.png)
 
 > We observe an MAE of ~ 3.
 
 #### **Other ML Models Results**
-- Linear Regression Validation Plot<br>
-![Validation Plot](./visuals/lr_validation_plot.png)
+- Linear Regression AvP Plot<br>
+![Validation Plot](./visuals/lr_actual_vs_predicted_plot.png)
 
-- Random Forest Validation Plot<br>
-![Validation Plot](./visuals/rf_validation_plot.png)
+- Random Forest AvP Plot<br>
+![Validation Plot](./visuals/rf_actual_vs_predicted_plot.png)
 
-- SARIMAX Validation Plot<br>
-![Validation Plot](./visuals/sarimax_validation_plot.png)
+- SARIMAX AvP Plot<br>
+![Validation Plot](./visuals/sarimax_actual_vs_predicted_plot.png)
 
 > We observe an MAE between ~ 11-13 for these models.
 
