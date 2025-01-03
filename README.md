@@ -44,7 +44,7 @@ Run the following the your command line:
 - LSTM Actual vs Predicted (AvP) Plot<br>
 ![Actual vs Predicted Plot](./visuals/lstm_actual_vs_predicted_plot.png)
 
-> We observe an MAE of ~ 3.
+> We observe an MAE of ~ 3. Plots may differ from what is seen in .ipynb due to re-runs.
 
 #### **Other ML Models Results**
 - Linear Regression AvP Plot<br>
@@ -63,4 +63,4 @@ Run the following the your command line:
 ### [4] To-Do
 
 1. Explore relationship between Brent Crude Oil Prices and other variables in the dataset, including lags (another .ipynb)
-2. MinMax Scale X_train for linear regression and exog for SARIMAX, observe if MAE has noticeable decrease
+2. Assess consistency in LSTM model's effectiveness (over other ML models) on other commodities
