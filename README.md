@@ -17,7 +17,7 @@ In this project, I am interested in experimenting with LSTMs as their ability to
 This project is inspired by this [article](https://medium.com/@vinayarun/from-scratch-an-lstm-model-to-predict-commodity-prices-179e12445c5a) on forecasting commodity prices using an LSTM model. 
 
 #### **Findings**
-I find that the LSTM model beats more traditional models with respect to forecasting prices of Brent Crude Oil. This could be due to the long-term dependencies captured in the aforementioned target variable. In fact, the time series shows multiple patterns that **sometimes** last a long time. As such, the model's ability to capture these dependencies, whether linear or non-linear, and also forget information that is no longer important may have allowed it to excel in this scenario.
+I found that the LSTM model beats more traditional models with respect to forecasting prices of Brent Crude Oil. This could be due to the long-term dependencies captured in the aforementioned target variable. In fact, the time series shows multiple patterns that **sometimes** last a long time. As such, the model's ability to capture these dependencies, whether linear or non-linear, and also forget information that is no longer important may have allowed it to excel in this scenario.
 
 On the flipside, models like ARIMA may struggle due to the non-linear trend of the data along with its preference for short-term forecasting (in this case, we are validating ~ 60 data points representing 60 months).
 
@@ -40,25 +40,23 @@ Run the following the your command line:
 ### [3] Model Results
 
 #### **LSTM Model Results**
-LSTM Validation Plot<br>
+**LSTM Validation Plot**<br>
 ![Validation Plot](./visuals/lstm_validation_plot.png)
 
-LSTM Actual vs Predicted (AvP) Plot<br>
+**LSTM Actual vs Predicted (AvP) Plot**<br>
 ![Actual vs Predicted Plot](./visuals/lstm_actual_vs_predicted_plot.png)
 
-> We observe an MAE of ~ 3. Plots may differ from what is seen in .ipynb due to re-runs.
+> Plots may differ from what is seen in .ipynb due to re-runs.
 
 #### **Other ML Models Results**
-Linear Regression AvP Plot<br>
+**Linear Regression AvP Plot**<br>
 ![Actual vs Predicted Plot](./visuals/lr_actual_vs_predicted_plot.png)
 
-Random Forest AvP Plot<br>
+**Random Forest AvP Plot**<br>
 ![Actual vs Predicted Plot](./visuals/rf_actual_vs_predicted_plot.png)
 
-SARIMAX AvP Plot<br>
+**SARIMAX AvP Plot**<br>
 ![Actual vs Predicted Plot](./visuals/sarimax_actual_vs_predicted_plot.png)
-
-> We observe an MAE between ~ 11-13 for these models.
 
 ---
 
@@ -67,3 +65,4 @@ SARIMAX AvP Plot<br>
 1. Explore relationship between Brent Crude Oil Prices and lagged variables by day (current dataset is monthly)
 2. Enhance existing LSTM model and experiment with other models
 3. Develop quantitative strategy in tandem with market behaviour
+4. Add detailed explanation on dataset and evaluation methods
