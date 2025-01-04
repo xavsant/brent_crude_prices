@@ -21,6 +21,8 @@ I find that the LSTM model beats more traditional models with respect to forecas
 
 On the flipside, models like ARIMA may struggle due to the non-linear trend of the data along with its preference for short-term forecasting (in this case, we are validating ~ 60 data points representing 60 months).
 
+ For a more detailed analysis, refer to [this](https://github.com/xavsant/brent_crude_prices/blob/main/ANALYSIS.md).
+
 ---
 
 ### [2] Dependencies:
@@ -38,23 +40,23 @@ Run the following the your command line:
 ### [3] Model Results
 
 #### **LSTM Model Results**
-- LSTM Validation Plot<br>
+LSTM Validation Plot<br>
 ![Validation Plot](./visuals/lstm_validation_plot.png)
 
-- LSTM Actual vs Predicted (AvP) Plot<br>
+LSTM Actual vs Predicted (AvP) Plot<br>
 ![Actual vs Predicted Plot](./visuals/lstm_actual_vs_predicted_plot.png)
 
 > We observe an MAE of ~ 3. Plots may differ from what is seen in .ipynb due to re-runs.
 
 #### **Other ML Models Results**
-- Linear Regression AvP Plot<br>
-![Validation Plot](./visuals/lr_actual_vs_predicted_plot.png)
+Linear Regression AvP Plot<br>
+![Actual vs Predicted Plot](./visuals/lr_actual_vs_predicted_plot.png)
 
-- Random Forest AvP Plot<br>
-![Validation Plot](./visuals/rf_actual_vs_predicted_plot.png)
+Random Forest AvP Plot<br>
+![Actual vs Predicted Plot](./visuals/rf_actual_vs_predicted_plot.png)
 
-- SARIMAX AvP Plot<br>
-![Validation Plot](./visuals/sarimax_actual_vs_predicted_plot.png)
+SARIMAX AvP Plot<br>
+![Actual vs Predicted Plot](./visuals/sarimax_actual_vs_predicted_plot.png)
 
 > We observe an MAE between ~ 11-13 for these models.
 
@@ -62,5 +64,6 @@ Run the following the your command line:
 
 ### [4] To-Do
 
-1. Explore relationship between Brent Crude Oil Prices and other variables in the dataset, including lags (another .ipynb)
-2. Assess consistency in LSTM model's effectiveness (over other ML models) on other commodities
+1. Explore relationship between Brent Crude Oil Prices and lagged variables by day (current dataset is monthly)
+2. Enhance existing LSTM model and experiment with other models
+3. Develop quantitative strategy in tandem with market behaviour
