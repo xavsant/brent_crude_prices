@@ -66,3 +66,4 @@ Run the following the your command line:
 2. Enhance existing LSTM model and experiment with other models
 3. Develop quantitative strategy in tandem with market behaviour
 4. Add detailed explanation on dataset and evaluation methods
+5. Analyse variables with suprisingly high correlation to POILBRE (namely copper and tin)

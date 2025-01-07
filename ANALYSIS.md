@@ -22,17 +22,17 @@ There was a seismic shift between 2011 to 2014, with POILBRE being priced an ave
 
 From 2014 onwards, the relationship from 2011 to 2014 generally follows, with POILWTI being charged at a discount to POILBRE.
 
-From the above, I become more certain as to why the LSTM model might outperform other traditional ML models. Being able to update key information as well as forget information (across all features) would be especially useful in ensuring optimum forecast accuracy for POILBRE.
+From the above, I became more certain as to why the LSTM model might outperform other traditional ML models. Being able to update key information as well as forget information (across all features) would be especially useful in ensuring optimum forecast accuracy for POILBRE.
  
  ---
 
 ### LSTM model vs other ML models
 
-For this project, I am primarily interested in assessing the usefulness of the Long Short-Term Memory (LSTM) model in forecasting commodity prices (namely, POILBRE) over other traditional Machine Learning (ML) models.
+For this project, I was primarily interested in assessing the usefulness of the Long Short-Term Memory (LSTM) model in forecasting commodity prices (namely, POILBRE) over other traditional Machine Learning (ML) models.
 
-Utilising all relevant features made available in the dataset, I found that the LSTM model outperforms other ML models (namely Linear Regression, Random Forest, ARIMA and its variants) by a noticeable margin.
+Utilising all relevant features made available in the dataset, I found that the LSTM model outperformed other ML models (namely Linear Regression, Random Forest, ARIMA and its variants) by a noticeable margin.
 
-With an 80/20 split of monthly data ranging from 1993 to mid 2017, here are the Mean Absolute Errors (MAEs) of the models:
+With an 80/20 split of monthly data ranging from 1993 to mid 2017, these were the Mean Absolute Errors (MAEs) of the models:
 
 > Note that the min, max price POILBRE is 9.8, 133.9 ($USD)
 
@@ -47,7 +47,7 @@ With an 80/20 split of monthly data ranging from 1993 to mid 2017, here are the 
 
 > LSTM model performance will vary across runs
 
-Comparing the plots of the LSTM model against the Random Forest model, we can see that the LSTM model more closely follows the true behaviour of the time series.
+Comparing the plots of the LSTM model against the Random Forest model, I found that the LSTM model more closely follows the true behaviour of the time series.
 
 **LSTM Actual vs Predicted Plot**<br>
 ![LSTM Actual vs Predicted Plot](./visuals/lstm_actual_vs_predicted_plot.png)
@@ -59,9 +59,9 @@ Comparing the plots of the LSTM model against the Random Forest model, we can se
 
 ### Dimensionality Reduction
 
-Instead of absent-mindedly throwing all features into the model, I am also interested in optimising model performance by only including the features with the most predictive power. For this project, I decided to try utilising only the top 9 features to forecast POILBRE, as opposed to all 53 of them.
+Instead of absent-mindedly throwing all features into the model, I was also interested in optimising model performance by only including the features with the most predictive power. For this project, I tried utilising only the top 9 features to forecast POILBRE, as opposed to all 53 of them.
 
-These 9 features, with correlations from 87.6% up to 99.9%, are:<br>
+The top 9 features, with correlations from 87.6% up to 99.9%, are:<br>
 1. Oil Asia-Pacific Spot Price
 2. Oil Dubai
 3. Oil West Texas Intermediate 
@@ -74,7 +74,7 @@ These 9 features, with correlations from 87.6% up to 99.9%, are:<br>
 
 > More market research, possibly leading to additional feature engineering can be done to include features with the most explanatory power for forecasting POILBRE - improving model performance further
 
-Here are the Mean Absolute Errors (MAEs) of the original models and dimensionally-reduced models:
+Here were the Mean Absolute Errors (MAEs) of the original models and the dimensionally-reduced models:
 
 | Model | Mean Absolute Error |
 |---|---|
@@ -85,9 +85,9 @@ Here are the Mean Absolute Errors (MAEs) of the original models and dimensionall
 
 > LSTM model(s) performance will vary across runs
 
-By decluttering the feature set, we see a noticeable improvement in the performance of these two models.
+By decluttering the feature set, I found a noticeable improvement in the performance of these two models.
 
-For a better understanding of the improvement gained from dimensionality reduction, we can compare the difference between the LSTM model's Validation Plot and its Actual vs Predicted Plot.
+For a better understanding of the improvement gained from dimensionality reduction, we could compare the difference between the LSTM model's Validation Plot and its Actual vs Predicted Plot.
 
 **Original LSTM Validation Plot**<br>
 ![LSTM Actual vs Predicted Plot](./visuals/lstm_validation_plot.png)
@@ -101,12 +101,12 @@ For a better understanding of the improvement gained from dimensionality reducti
 **Reduced LSTM Actual vs Predicted Plot**<br>
 ![LSTM Actual vs Predicted Plot](./visuals/lstm_actual_vs_predicted_plot_optimised.png)
 
-In the reduced LSTM plot, the model is able to follow the trend of the time series more tightly. Like other models, it slightly overestimates the price from 2014 onwards, and so we could make further adjustments to negatively bias the forecast post 2014 for improved performance.
+In the reduced LSTM plot, the model followed the trend of the time series more tightly. Like other models, it slightly overestimated the price from 2014 onwards, and so we could make further adjustments to negatively bias the forecast post 2014 for improved performance.
 
 ---
 
 ### Conclusion
 
-I learnt about the everchanging nature of physical commodities (with reference to the change in relationship between POILBRE and POILWTI). Besides monitoring these relationships, I would say that understanding how various factors (e.g. supply chain, geopolitical, environmental, etc.) can impact relationship between commodities and their prices is necessary to make trading decisions with the highest precision.
+I learnt about the dynamic nature of physical commodities (with reference to the change in relationship between POILBRE and POILWTI). Besides monitoring these pair-wise relationships, I would say that understanding how various other factors (e.g. supply chain, geopolitical, environmental, etc.) can impact the relationship between commodities and their prices is necessary to make trading decisions with the highest precision.
 
-With relation the LSTM model, I find that it is a powerful tool for forecasting commodity prices. It could be especially useful for immediate buy/sell strategies and also futures contracts. To create a more robust and high-performance model, it would be interesting to experiment with more feature engineering, more advanced LSTM models and hybrid LSTM models (e.g. comparing effectiveness of ARIMA for short-term predictions).
+With relation to the LSTM model, I found that it is a powerful tool for forecasting commodity prices. It could be especially useful for immediate buy/sell strategies and also futures contracts. To create a more robust and high-performance model, it would be interesting to experiment with more feature engineering, more advanced LSTM models and hybrid LSTM models (e.g. comparing effectiveness of ARIMA for short-term predictions).
