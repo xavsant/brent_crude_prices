@@ -12,7 +12,7 @@
 
 Practice with the Long Short-Term Memory (LSTM) model with a focus on physical energy commodities, specifically Brent Crude Oil prices. 
 
-In this project, I am interested in experimenting with the LSTM models as its ability to handle sequential data allows it to analyse long-term dependencies between time steps of data. I am also interested in comparing the LSTM model vs other models.
+In this project, I am interested in experimenting with the LSTM model as its ability to handle sequential data allows it to analyse long-term dependencies between time steps of data. I am also interested in comparing the LSTM model vs other models.
 
 This project is inspired by this [article](https://medium.com/@vinayarun/from-scratch-an-lstm-model-to-predict-commodity-prices-179e12445c5a) on forecasting Brent Crude Oil price using an LSTM model. 
 
@@ -32,7 +32,7 @@ If any packages/dependencies are updated via poetry, be sure to export the requi
 `poetry export --without-hashes -f requirements.txt -o requirements.txt`
 
 #### **Installing Dependencies**
-Run the following the your command line:
+Run the following in your command line:
 `pip install -r requirements.txt`
 
 ---
