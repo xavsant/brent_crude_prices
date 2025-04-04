@@ -6,18 +6,18 @@
 
 ### Relationship between Brent Crude Oil (POILBRE) and West Texas Intermediate Oil (POILWTI) Prices
 
-**Price Plot of POILBRE and POILWTI from 1993 to mid 2017**
+**Price Plot of POILBRE and POILWTI from 1993 to mid 2017**<br>
 ![Price Plot](./visuals/time_series_POILBRE_POILWTI.png)
 
 Comparing these two commodities, I found varying relationships throughout the time-series. From 1993 to 2011, there is a positive spread, with POILWTI priced higher. This spread is small (averaging ~ $1.3) but consistent.
 
-**Price Plot between 1993 to 1998** 
+**Price Plot between 1993 to 1998**
 Positive spread generally holds until 2011.<br>
 ![Price Plot, 1993 to 1998](./visuals/time_series_POILBRE_POILWTI_1993_1998.png)
 
 There was a seismic shift between 2011 to 2014, with POILBRE being priced an average of ~ $12.6 higher than POILWTI - a huge price differential. Reasons for this shift are chalked up to limits in pipeline capacity for POILWTI and shifts in demand.<br>
 
-**Price Plot between 2011 to 2014**
+**Price Plot between 2011 to 2014**<br>
 ![Price Plot, 2011 to 2014](./visuals/time_series_POILBRE_POILWTI_2011_2014.png)
 
 From 2014 onwards, the relationship from 2011 to 2014 generally follows, with POILWTI being charged at a discount to POILBRE.
